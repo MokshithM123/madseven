@@ -1,3 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fetch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationX="1"
+            android:rotationY="2"
+            android:text="Fetch Data" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    
 package com.example.json_app7_103;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -112,3 +147,30 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+list_item.xml
+
+    
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/cid"
+/>
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/cname"
+/>
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/cemail"
+/>
+</LinearLayout>
+
+
+
