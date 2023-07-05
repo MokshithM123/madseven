@@ -172,5 +172,10 @@ android:id="@+id/cemail"
 />
 </LinearLayout>
 
+AndroidManifest.xml
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
 
 
